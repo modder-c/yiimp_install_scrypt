@@ -1,12 +1,12 @@
 #!/bin/bash
 ################################################################################
 # Original Author:   crombiecrunch
-# Modified by : Xavatar (https://github.com/xavatar/yiimp_install_scrypt)
-# Web: https://www.xavatar.com    
+# Modified by : Xavatar (https://github.com/msy2008/yiimp_install_scrypt)
+# Web: http://amxpool.com:8282    
 #
 # Program:
 #   Install yiimp on Ubuntu 16.04/18.04 running Nginx, MariaDB, and php7.3
-#   v0.2 (update Avril, 2020)
+#   v1.0 (update Avril, 2023)
 # 
 ################################################################################
 	
@@ -45,7 +45,7 @@
     clear
     echo
     echo -e "$GREEN************************************************************************$COL_RESET"
-    echo -e "$GREEN Yiimp Install Script v0.2 $COL_RESET"
+    echo -e "$GREEN Yiimp Install Script v1.0 $COL_RESET"
     echo -e "$GREEN Install yiimp on Ubuntu 16.04/18.04 running Nginx, MariaDB, and php7.3 $COL_RESET"
     echo -e "$GREEN************************************************************************$COL_RESET"
     echo
@@ -203,22 +203,22 @@
 	sleep 3
 
     
-    # Installing Package to compile crypto currency
-    echo
-    echo
-    echo -e "$CYAN => Installing Package to compile crypto currency $COL_RESET"
-    echo
-    sleep 3
+    //# Installing Package to compile crypto currency
+    //echo
+    //echo
+    //echo -e "$CYAN => Installing Package to compile crypto currency $COL_RESET"
+    //echo
+    //sleep 3
     
-    apt_install software-properties-common build-essential
-    apt_install libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils git cmake libboost-all-dev zlib1g-dev libz-dev libseccomp-dev libcap-dev libminiupnpc-dev gettext
-    apt_install libminiupnpc10 libzmq5
-    apt_install libcanberra-gtk-module libqrencode-dev libzmq3-dev
-    apt_install libqt5gui5 libqt5core5a libqt5webkit5-dev libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
-    hide_output sudo add-apt-repository -y ppa:bitcoin/bitcoin
-    hide_output sudo apt -y update
-    apt_install libdb4.8-dev libdb4.8++-dev libdb5.3 libdb5.3++
-    echo -e "$GREEN Done...$COL_RESET"
+    //apt_install software-properties-common build-essential
+    //apt_install libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils git cmake libboost-all-dev zlib1g-dev libz-dev libseccomp-dev libcap-dev libminiupnpc-dev gettext
+    //apt_install libminiupnpc10 libzmq5
+    //apt_install libcanberra-gtk-module libqrencode-dev libzmq3-dev
+    //apt_install libqt5gui5 libqt5core5a libqt5webkit5-dev libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
+    //hide_output sudo add-apt-repository -y ppa:bitcoin/bitcoin
+    //hide_output sudo apt -y update
+    //apt_install libdb4.8-dev libdb4.8++-dev libdb5.3 libdb5.3++
+    //echo -e "$GREEN Done...$COL_RESET"
        
     
     # Generating Random Passwords
@@ -327,6 +327,10 @@
     hide_output sudo ufw allow 8463/tcp
     hide_output sudo ufw allow 8433/tcp
     hide_output sudo ufw allow 8533/tcp
+    hide_output sudo ufw allow 9391/tcp
+    hide_output sudo ufw allow 5900/tcp
+    hide_output sudo ufw allow 9321/tcp
+    hide_output sudo ufw allow 22171/tcp
     hide_output sudo ufw --force enable
     sleep 5
     sudo systemctl status ufw | sed -n "1,3p"   
@@ -369,7 +373,7 @@
     
     # Compil Blocknotify
     cd ~
-    hide_output git clone https://github.com/tpruvot/yiimp
+    hide_output git clone https://github.com/msy2008/yiimp
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     hide_output sudo make
@@ -1008,8 +1012,8 @@
     define('"'"'YAAMP_FEES_RENTING'"'"', 2);
     define('"'"'YAAMP_TXFEE_RENTING_WD'"'"', 0.002);
     
-    define('"'"'YAAMP_PAYMENTS_FREQ'"'"', 2*60*60);
-    define('"'"'YAAMP_PAYMENTS_MINI'"'"', 0.001);
+    define('"'"'YAAMP_PAYMENTS_FREQ'"'"', 3*60*60);
+    define('"'"'YAAMP_PAYMENTS_MINI'"'"', 1);
     
     define('"'"'YAAMP_ALLOW_EXCHANGE'"'"', false);
     define('"'"'YIIMP_PUBLIC_EXPLORER'"'"', true);
@@ -1030,7 +1034,7 @@
     define('"'"'YAAMP_CREATE_NEW_COINS'"'"', false);
     define('"'"'YAAMP_NOTIFY_NEW_COINS'"'"', false);
     
-    define('"'"'YAAMP_DEFAULT_ALGO'"'"', '"'"'x11'"'"');
+    define('"'"'YAAMP_DEFAULT_ALGO'"'"', '"'"'scrypt'"'"');
     
     define('"'"'YAAMP_USE_NGINX'"'"', true);
     
@@ -1067,8 +1071,8 @@
     // Sample fixed pool fees
     $configFixedPoolFees = array(
         '"'"'zr5'"'"' => 2.0,
-        '"'"'scrypt'"'"' => 20.0,
-        '"'"'sha256'"'"' => 5.0,
+        '"'"'scrypt'"'"' => 2.0,
+        '"'"'sha256'"'"' => 2.0,
      );
     
     // Sample custom stratum ports
@@ -1169,7 +1173,7 @@
     echo
     echo
     echo -e "$GREEN***************************$COL_RESET"
-    echo -e "$GREEN Yiimp Install Script v0.2 $COL_RESET"
+    echo -e "$GREEN Yiimp Install Script v1.0 $COL_RESET"
     echo -e "$GREEN Finish !!! $COL_RESET"
     echo -e "$GREEN***************************$COL_RESET"
     echo 
@@ -1189,7 +1193,7 @@
     echo -e "$CYAN Please make sure to change your private keys in the /etc/yiimp/keys.php file. $COL_RESET"
     echo
     echo -e "$CYAN TUTO Youtube : https://www.youtube.com/watch?v=qE0rhfJ1g2k $COL_RESET"
-    echo -e "$CYAN Xavatar WebSite : https://www.xavatar.com $COL_RESET"
+    echo -e "$CYAN msy2008 WebSite : http://amxpool.com:8282 $COL_RESET"
     echo
     echo
     echo -e "$RED***************************************************$COL_RESET"
