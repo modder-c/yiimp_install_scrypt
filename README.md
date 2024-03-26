@@ -1,4 +1,4 @@
-# Yiimp_install_scrypt v1.0 (update msy2008, 2023)
+# Yiimp_install_scrypt v1.0 (update msy2008, 2024)
 
 Site : http://amxpool.com:8282
 
@@ -8,7 +8,7 @@ Telegram : https://t.me/infinitecoin_IFC
 
 Discord : https://discord.com/invite/3Qq2neb
  
-TUTO Youtube (16.04 / 18.04 - Without SSL) : https://www.youtube.com/watch?v=qE0rhfJ1g2k
+TUTO Youtube (20.04 / 18.04 - Without SSL) : https://www.youtube.com/watch?v=qE0rhfJ1g2k
 
 msy2008 Yiimp (used in this script for Yiimp Installation): https://github.com/msy2008/yiimp
 
@@ -21,9 +21,9 @@ Original Yiimp Installer : https://github.com/xavatar/yiimp_install_scrypt
 
 ***********************************
 
-## Install script for yiimp on Ubuntu Server 16.04 / 18.04 (use msy2008's Yiimp)
+## Install script for yiimp on Ubuntu Server 20.04 / 18.04 (use msy2008's Yiimp)
 
-USE THIS SCRIPT ON FRESH INSTALL UBUNTU Server 16.04 / 18.04 !
+USE THIS SCRIPT ON FRESH INSTALL UBUNTU Server 20.04 / 18.04 !
 
 Connect on your VPS =>
 - apt update
@@ -32,9 +32,11 @@ Connect on your VPS =>
 - adduser pool (pool it's just an example...)
 - adduser pool sudo
 - su - pool
-- sudo apt -y install git
+- exit
+- su - pool
+- sudo apt-get install build-essential libssl-dev curl git-core openssh-server
 - git clone https://github.com/msy2008/yiimp_install_scrypt.git
-- cd yiimp_install_scrypt/
+- cd yiimp_install_scrypt
 - bash install.sh (DO NOT RUN THE SCRIPT AS ROOT or SUDO)
 - At the end, you MUST REBOOT to finalize installation...
 
@@ -44,19 +46,15 @@ Finish !
 
 If you are issue after installation (nginx,mariadb... not found), use this script : bash install-debug.sh (watch the log during installation)
 
-###### :bangbang: **Kudaraidee Install Script :**
-- Instead Tpruvot's Yiimp, you can use the Kudaraidee's Repo Yiimp : git clone -b Kudaraidee https://github.com/Kudaraidee/yiimp.git
-- It's an updated Yiimp, with more algo, some fix....
-
 ###### :bangbang: **YOU MUST UPDATE THE FOLLOWING FILES :**
+
 - **/var/web/serverconfig.php :** update this file to include your public ip (line = YAAMP_ADMIN_IP) to access the admin panel (Put your PERSONNAL IP, NOT IP of your VPS). update with public keys from exchanges. update with other information specific to your server..
 - **/etc/yiimp/keys.php :** update with secrect keys from the exchanges (not mandatory)
 - **If you want change 'AdminPanel' to access Panel Admin :** Edit this file "/var/web/yaamp/modules/site/SiteController.php" and Line 11 => change 'AdminPanel'
 
+###### :bangbang: **IMPORTANT** :
 
-###### :bangbang: **IMPORTANT** : 
-
-- The configuration of yiimp and coin require a minimum of knowledge in linux
+- The configuration of yiimp and coin require a minimum of knowledge in linux & many beers...
 - Your mysql information (login/Password) is saved in **~/.my.cnf**
 
 ***********************************
