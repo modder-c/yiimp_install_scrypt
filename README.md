@@ -8,7 +8,7 @@ Telegram : https://t.me/infinitecoin_IFC
 
 Discord : https://discord.com/invite/3Qq2neb
  
-TUTO Youtube (20.04 / 18.04 - Without SSL) : https://www.youtube.com/watch?v=qE0rhfJ1g2k
+TUTO Youtube (16.04 / 18.04 - Without SSL) : https://www.youtube.com/watch?v=qE0rhfJ1g2k
 
 msy2008 Yiimp (used in this script for Yiimp Installation): https://github.com/msy2008/yiimp
 
@@ -21,9 +21,9 @@ Original Yiimp Installer : https://github.com/xavatar/yiimp_install_scrypt
 
 ***********************************
 
-## Install script for yiimp on Ubuntu Server 20.04 / 18.04 (use msy2008's Yiimp)
+## Install script for yiimp on Ubuntu Server 16.04 / 18.04 (use msy2008's Yiimp)
 
-USE THIS SCRIPT ON FRESH INSTALL UBUNTU Server 20.04 / 18.04 !
+USE THIS SCRIPT ON FRESH INSTALL UBUNTU Server 16.04 / 18.04 !
 
 Connect on your VPS =>
 - apt update
