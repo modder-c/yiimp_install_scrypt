@@ -2,12 +2,14 @@
 
 Site : http://amxpool.com:8282
 
-Twitter : https://twitter.com/msy2008
+X Twitter：https://twitter.com/dogmcoin
+Discord: https://discord.gg/bYsZGSVf6e
+Telegram: https://t.me/DogmcoinEnglish
 
-Telegram : https://t.me/infinitecoin_IFC
+X Twitter: https://twitter.com/msy2008
+Discord: https://discord.gg/3Qq2neb
+Telegram: https://t.me/infinitecoin_IFC
 
-Discord : https://discord.com/invite/3Qq2neb
- 
 TUTO Youtube (16.04 / 18.04 - Without SSL) : https://www.youtube.com/watch?v=qE0rhfJ1g2k
 
 msy2008 Yiimp (used in this script for Yiimp Installation): https://github.com/msy2008/yiimp
