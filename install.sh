@@ -1056,7 +1056,7 @@
     define('"'"'YAAMP_CREATE_NEW_COINS'"'"', false);
     define('"'"'YAAMP_NOTIFY_NEW_COINS'"'"', false);
 
-    define('"'"'YAAMP_DEFAULT_ALGO'"'"', '"'"'all'"'"');
+    define('"'"'YAAMP_DEFAULT_ALGO'"'"', '"'"'scrypt'"'"');
 
     define('"'"'YAAMP_USE_NGINX'"'"', true);
 
