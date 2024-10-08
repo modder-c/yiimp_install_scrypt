@@ -30,8 +30,9 @@ Original Yiimp Installer : https://github.com/xavatar/yiimp_install_scrypt
 ## Install script for yiimp on Ubuntu Server 16.04 / 18.04 (use msy2008's Yiimp)
 
 USE THIS SCRIPT ON FRESH INSTALL UBUNTU Server 16.04 / 18.04 !
-Some people report that it can also be installed on Ubuntu 20.04, but I haven't tried it.
-Note: Enable root and log in to your Ubuntu system as root!!!
+
+## Some people report that it can also be installed on Ubuntu 20.04, but I haven't tried it.
+## Note: Enable root and log in to your Ubuntu system as root!!!
 
 Connect on your VPS =>
 - apt update
