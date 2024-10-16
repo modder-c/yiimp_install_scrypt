@@ -41,20 +41,32 @@ Connect on your VPS =>
 apt update
 apt upgrade
 reboot
-adduser pool (pool it's just an example...)
+```
+Create a new user, example: pool
+```
+adduser pool
+``` 
 adduser pool sudo
+```
 su - pool
+```
 exit
+```
 su - pool
+```
 sudo apt-get install build-essential libssl-dev curl git-core openssh-server
+```
+Download the Yiimp installation script
+```
 git clone https://github.com/msy2008/yiimp_install_scrypt.git
+```
 cd yiimp_install_scrypt
+```
 bash install.sh
 ```
-- DO NOT RUN THE SCRIPT AS ROOT or SUDO !!!
 - At the end, you MUST REBOOT to finalize installation...
 
-* Use separately developed stratum
+** Use separately developed stratum
 ```
 git clone https://github.com/msy2008/stratum-full.git
 ```
