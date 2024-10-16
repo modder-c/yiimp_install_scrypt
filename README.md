@@ -37,19 +37,45 @@ USE THIS SCRIPT ON FRESH INSTALL UBUNTU Server 16.04 / 18.04 !
 ## Note: Enable root and log in to your Ubuntu system as root!!!
 
 Connect on your VPS =>
-- apt update
-- apt upgrade
-- reboot
-- adduser pool (pool it's just an example...)
-- adduser pool sudo
-- su - pool
-- exit
-- su - pool
-- sudo apt-get install build-essential libssl-dev curl git-core openssh-server
-- git clone https://github.com/msy2008/yiimp_install_scrypt.git
-- cd yiimp_install_scrypt
-- bash install.sh (DO NOT RUN THE SCRIPT AS ROOT or SUDO)
+```
+apt update
+apt upgrade
+reboot
+adduser pool (pool it's just an example...)
+adduser pool sudo
+su - pool
+exit
+su - pool
+sudo apt-get install build-essential libssl-dev curl git-core openssh-server
+git clone https://github.com/msy2008/yiimp_install_scrypt.git
+cd yiimp_install_scrypt
+bash install.sh
+```
+- DO NOT RUN THE SCRIPT AS ROOT or SUDO !!!
 - At the end, you MUST REBOOT to finalize installation...
+
+* Use separately developed stratum
+```
+git clone https://github.com/msy2008/stratum-full.git
+```
+
+* Compile
+```
+cd stratum-full/iniparser
+make
+cd ..
+make
+```
+
+* Move stratum file 
+```
+sudo mv stratum /var/stratum/stratum_full
+```
+
+* Run as follows: For example, if you use the scrypt algorithm (copy the scrypt.conf file to the stratum folder)
+```
+./stratum_full scrypt
+```
 
 Finish !
 - Go http://xxx.xxx.xxx.xxx or https://xxx.xxx.xxx.xxx (if you have chosen LetsEncrypt SSL). Enjoy !
