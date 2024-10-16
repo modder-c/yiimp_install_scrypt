@@ -67,7 +67,8 @@ bash install.sh
 ```
 - At the end, you MUST REBOOT to finalize installation...
 
-** Use separately developed stratum
+##  Use separately developed stratum
+* Connect on your VPS =>
 ```
 git clone https://github.com/msy2008/stratum-full.git
 ```
