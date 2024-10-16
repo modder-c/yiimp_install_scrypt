@@ -18,6 +18,8 @@ TUTO Youtube (16.04 / 18.04 - Without SSL) : https://www.youtube.com/watch?v=qE0
 
 msy2008 Yiimp (used in this script for Yiimp Installation): https://github.com/msy2008/yiimp
 
+msy2008 Stratum (Use separately developed stratum): https://github.com/msy2008/stratum-full
+
 msy2008 Yiimp Installer : https://github.com/msy2008/yiimp_install_scrypt
 
 Original Yiimp : https://github.com/tpruvot/yiimp
