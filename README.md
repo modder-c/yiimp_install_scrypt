@@ -36,13 +36,13 @@ USE THIS SCRIPT ON FRESH INSTALL UBUNTU Server 16.04 / 18.04 !
 ## Some people report that it can also be installed on Ubuntu 20.04, but I haven't tried it.
 ## Note: Enable root and log in to your Ubuntu system as root!!!
 
-Connect on your VPS =>
+* Connect on your VPS =>
 ```
 apt update
 apt upgrade
 reboot
 ```
-Create a new user, example: pool
+* Create a new user, example: pool
 ```
 adduser pool
 ``` 
@@ -56,7 +56,7 @@ su - pool
 ```
 sudo apt-get install build-essential libssl-dev curl git-core openssh-server
 ```
-Download the Yiimp installation script
+* Download the Yiimp installation script
 ```
 git clone https://github.com/msy2008/yiimp_install_scrypt.git
 ```
