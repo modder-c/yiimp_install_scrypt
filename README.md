@@ -69,11 +69,13 @@ bash install.sh
 
 ##  Use separately developed stratum
 * Connect on your VPS =>
+ 
+1.Download the Yiimp stratum
 ```
 git clone https://github.com/msy2008/stratum-full.git
 ```
 
-* Compile
+2.Compile
 ```
 cd stratum-full/iniparser
 make
@@ -81,12 +83,12 @@ cd ..
 make
 ```
 
-* Move stratum file 
+3.Move stratum file 
 ```
 sudo mv stratum /var/stratum/stratum_full
 ```
 
-* Run as follows: For example, if you use the scrypt algorithm (copy the scrypt.conf file to the stratum folder)
+4.Run as follows: For example, if you use the scrypt algorithm (copy the scrypt.conf file to the stratum folder)
 ```
 ./stratum_full scrypt
 ```
