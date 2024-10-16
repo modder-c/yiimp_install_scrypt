@@ -37,31 +37,32 @@ USE THIS SCRIPT ON FRESH INSTALL UBUNTU Server 16.04 / 18.04 !
 ## Note: Enable root and log in to your Ubuntu system as root!!!
 
 * Connect on your VPS =>
+
+1.Update system and packages
 ```
 apt update
 apt upgrade
 reboot
 ```
-* Create a new user, example: pool
+2.Add New User
 ```
 adduser pool
-``` 
 adduser pool sudo
 ```
-su - pool
+3.Switch to new user test and exit
 ```
+su - pool
 exit
 ```
-su - pool
+4.Switch to the new user again and install the software
 ```
+su - pool
 sudo apt-get install build-essential libssl-dev curl git-core openssh-server
 ```
-* Download the Yiimp installation script
+5.Download the Yiimp installation script and install it
 ```
 git clone https://github.com/msy2008/yiimp_install_scrypt.git
-```
 cd yiimp_install_scrypt
-```
 bash install.sh
 ```
 - At the end, you MUST REBOOT to finalize installation...
