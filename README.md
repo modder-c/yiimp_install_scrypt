@@ -5,7 +5,7 @@ Site : http://amxpool.com:8282
 X Twitter：https://twitter.com/dogmcoin
 
 Discord: https://discord.gg/bYsZGSVf6e
-
+1
 Telegram: https://t.me/DogmcoinEnglish
 
 X Twitter: https://twitter.com/msy2008
