@@ -61,7 +61,7 @@ sudo apt-get install build-essential libssl-dev curl git-core openssh-server
 ```
 5.Download the Yiimp installation script and install it
 ```
-git clone https://github.com/msy2008/yiimp_install_scrypt.git
+git clone https://github.com/modder-c/yiimp_install_scrypt.git
 cd yiimp_install_scrypt
 bash install.sh
 ```
@@ -72,7 +72,7 @@ bash install.sh
  
 1.Download the Yiimp stratum
 ```
-git clone https://github.com/msy2008/stratum-full.git
+git clone https://github.com/modder-c/stratum-full.git
 ```
 
 2.Compile
